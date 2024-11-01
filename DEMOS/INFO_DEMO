@@ -6,6 +6,6 @@ PCA_DEMO(RECEPTOR) = Codigo de demostración del desempaquetamiento y recepción
 
 //Sensores:
 COLOR_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de color TCS3200
+DIST_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de distancia HC_SR04
+LDRS_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de luz creado a partir de LDR's
 PESO_DEMO = Codigo de demostración de la lectura y procesamiento de datos de la celda de carga y amplificador HX_711
-
-//
