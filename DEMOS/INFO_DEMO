@@ -1,0 +1,11 @@
+//Comunicación serial:
+APC_DEMO(EMISOR) = Codigo de demostración del empaquetamiento y envio de datos desde el arduino a la PC
+PCA_DEMO(EMISOR) = Codigo de demostración del empaquetamiento y envio de datos desde la PC a el Arduino
+APC_DEMO(RECEPTOR) = Codigo de demostración del desempaquetamiento y recepción de datos enviados desde arduino a la PC
+PCA_DEMO(RECEPTOR) = Codigo de demostración del desempaquetamiento y recepción de datos enviados desde la PC a el Arduino
+
+//Sensores:
+COLOR_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de color TCS3200
+PESO_DEMO = Codigo de demostración de la lectura y procesamiento de datos de la celda de carga y amplificador HX_711
+
+//
