@@ -1,0 +1,16 @@
+//Comunicación serial:
+APC_DEMO(EMISOR) = Codigo de demostración del empaquetamiento y envio de datos desde el arduino a la PC (C++)
+PCA_DEMO(EMISOR) = Codigo de demostración del empaquetamiento y envio de datos desde la PC a el Arduino (C#)
+APC_DEMO(RECEPTOR) = Codigo de demostración del desempaquetamiento y recepción de datos enviados desde arduino a la PC (C#)
+PCA_DEMO(RECEPTOR) = Codigo de demostración del desempaquetamiento y recepción de datos enviados desde la PC a el Arduino (C++)
+
+//Sensores:
+COLOR_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de color TCS3200  (C++)
+DIST_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de distancia HC_SR04  (C++)
+LDRS_DEMO = Codigo de demostración de la lectura y procesamiento de datos del sensor de luz creado a partir de LDR's  (C++)
+PESO_DEMO = Codigo de demostración de la lectura y procesamiento de datos de la celda de carga y amplificador HX_711  (C++)
+
+//Actuadores:
+MOTO_DEMO =
+BUZZ_DEMO =
+LEDS_DEMO =
