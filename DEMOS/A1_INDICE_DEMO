@@ -11,6 +11,6 @@ LDRS_DEMO = Codigo de demostración de la lectura y procesamiento de datos del s
 PESO_DEMO = Codigo de demostración de la lectura y procesamiento de datos de la celda de carga y amplificador HX_711  (C++)
 
 //Actuadores:
-MOTO_DEMO =
-BUZZ_DEMO =
-LEDS_DEMO =
+MOTO_DEMO = Codigo de demostración del funcionamiento de los motores con el Tb6612 (c++)
+BUZZ_DEMO = Codigo de demostración del funcionamiento del buzzer pasivo con el Tb6612 (c++)
+LEDS_DEMO = Codigo de demostración del funcionamiento de las luces LED (c++)
