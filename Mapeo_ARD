@@ -1,0 +1,52 @@
+Ya que se va a controlar el arduino mediante el puerto serial y la pc, es necesario establecer una serie de codigos que hagan mas faciles la comunicación serial
+
+MAPEO DE COMANDOS QUE ARDUINO VA A TENER QUE ACEPTAR DE LA PC:
+El objetivo es que utilices una función como "Case" (Deberia haber un ejemplo de ello entre los demos)
+
+W = Activa el motor 1 en sentido horario
+w = Desactiva el motor 1
+
+S = Activa el motor 1 en sentido antihorario
+s = Desactiva el motor 1
+
+A = Activa el motor 2 en sentido horario
+a = Desactiva el motor 2
+
+D = Activa el motor 2 en sentido antihorario
+d = Desactiva el motor 2
+
+Q = Activa el servomotor y lo mueve en sentido horario
+q = Desactiva los servomotores 1 y 2
+
+E = Activa el servomotor y lo mueve en sentido antihorario
+e = Desactiva el servomotores 1 y 2
+
+F = Activa las luces LED
+f = Apaga las luces LED
+
+G = Enciende el buzzer 2
+g = apaga el buzzer 2
+
+
+PROPUESTA DE MENSAJE SERIAL QUE ARDUINO DEBE MANDAR A LA PC:
+
+R = Rango (Define si hay un barco en el rango de la grua, ya que la respuesta será "si" o "no" podemos usar 0 o 1)
+D = Distancia (La distancia entre el cabezal de la grua y los contenedores, deberia mandar el valor del sensor como un Int o Float)
+E = Empresa (Para este creo que lo mejor será usar un valor entre 0 y 3, donde   0 = Azul   1 = Verde   2 = Rojo   3 = Sin objetos medibles)
+P = Pista ( Determina que pista está disponible, Será 0 a 3, donde 0 quiere decir que no hay pistas, 1 a 2 hacen referencias a las pistas 1 a 2 y el 3 se envia si no hay nada a lo que enviar a las pistas)
+L = Luces ( Envia un 1 si es que hay luces encendidas y 0 si es que no)
+I = Iluminación (Envia un 0 si es de dia, 1 si está nublado y 2 si hay muy poca iluminación) (Para esto hay que medir el valor de resistencia de un LDR)
+C = Contacto (0 si no se está agarrando un contenedor, 1 si se está agarrando un contenedor) (Es un boton xd)
+
+
+EJEMPLO:
+1R2D1E3P0L1I0C
+1R = Hay un barco en rango
+2D = Hay un objeto a 2cm del cabezal de la grua
+1E = El contenedor pertenece a la empresa verde
+3P = La pista 2 está disponible
+0L = las luces de la grua están apagadas
+1I = Está nublado
+0C = El cabezal no está agarrando el contenedor
+
+
